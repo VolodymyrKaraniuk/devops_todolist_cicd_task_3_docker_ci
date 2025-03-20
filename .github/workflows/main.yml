@@ -15,6 +15,7 @@ env:
 jobs:
   python-ci:
     runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
     defaults:
       run:
         working-directory: ./src
